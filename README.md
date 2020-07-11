@@ -64,9 +64,15 @@ enc_path = "out/covered.mkv"
 
 Decrypted video is saved in ```out/secret_revealed.mkv```
 
+**Video Reference**
+- cover video : [Link][cover]
+- secret video : [Link][secret]
+
 LICENSE
 -------
 MIT
 
    [ffmpeg]: <https://ffmpeg.org>
+   [cover]: <https://www.youtube.com/watch?v=OnFbsxS-thw>
+   [secret]: <https://www.youtube.com/watch?v=mvVu9FI4bd4>
 
