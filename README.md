@@ -8,7 +8,7 @@ Hide Your secret videos inside any other videos.
 
 | *Secret Video to be hidden* |
 |:--:| 
-| ![Secret Video](img_md/v1.gif) |
+| ![Secret Video](img_md/v2.gif) |
 
 | *cover video with hidden secret video* |
 |:--:| 
