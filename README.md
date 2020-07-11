@@ -2,21 +2,13 @@
 
 Hide Your secret videos inside any other videos.
 ### Example
-| *Cover video where secret video is to be hidden* |
-|:--:| 
-| ![Cover Video](img_md/v1.gif) |
+| *Cover video where secret video is to be hidden* | *Secret Video to be hidden* |
+|:--:|:--:| 
+| ![Cover Video](img_md/v1.gif) | ![Secret Video](img_md/v2.gif) |
 
-| *Secret Video to be hidden* |
-|:--:| 
-| ![Secret Video](img_md/v2.gif) |
-
-| *cover video with hidden secret video* |
-|:--:| 
-| ![Encrypted Video](img_md/encrypted.gif) |
-
-| *Revealed secret video* |
-|:--:| 
-| ![Decrypted Video](img_md/revealed.gif) |
+| *cover video with hidden secret video* | *Revealed secret video* |
+|:--:|:--:|
+| ![Encrypted Video](img_md/encrypted.gif) | ![Decrypted Video](img_md/revealed.gif) |
 
 ### Features
 
