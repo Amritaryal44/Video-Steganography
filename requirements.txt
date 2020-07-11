@@ -1,0 +1,14 @@
+astroid==2.4.2
+isort==4.3.21
+lazy-object-proxy==1.4.3
+mccabe==0.6.1
+numpy==1.19.0
+opencv-python==4.2.0.34
+pkg-resources==0.0.0
+pylint==2.5.3
+six==1.15.0
+toml==0.10.1
+tqdm==4.47.0
+typed-ast==1.4.1
+Wave==0.0.2
+wrapt==1.12.1
