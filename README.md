@@ -68,7 +68,5 @@ LICENSE
 -------
 MIT
 
-   [art1]: <https://www.sciencedirect.com/science/article/abs/pii/S0925231218312608>
-   [wiki]: <https://en.wikipedia.org/wiki/Steganography>
    [ffmpeg]: <https://ffmpeg.org>
 
