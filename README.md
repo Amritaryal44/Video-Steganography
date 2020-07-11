@@ -1,5 +1,7 @@
 # Video Steganography
 
+[![Build Status](https://travis-ci.com/Amritaryal44/Video-Steganography.svg?branch=master)](https://travis-ci.com/Amritaryal44/Video-Steganography)
+
 Hide Your secret videos inside any other videos.
 ### Example
 | Cover video where secret video is to be hidden | Secret Video to be hidden |
