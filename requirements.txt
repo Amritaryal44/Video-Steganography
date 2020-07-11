@@ -1,9 +1,9 @@
 astroid==2.4.2
-isort==4.3.21
-lazy-object-proxy==1.4.3
+isort==5.0.8
+lazy-object-proxy==1.5.0
 mccabe==0.6.1
 numpy==1.19.0
-opencv-python==4.2.0.34
+opencv-python==4.3.0.36
 pkg-resources==0.0.0
 pylint==2.5.3
 six==1.15.0
