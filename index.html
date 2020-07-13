@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Video-steganography by Amritaryal44</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Video-steganography</h1>
+      <h2 class="project-tagline">Hide Your secret video inside another video</h2>
+      <a href="https://github.com/Amritaryal44/Video-Steganography" class="btn">View on GitHub</a>
+      <a href="https://github.com/Amritaryal44/Video-Steganography/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Amritaryal44/Video-Steganography/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="video-steganography" class="anchor" href="#video-steganography" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Video Steganography</h1>
+<p><a href="https://travis-ci.com/Amritaryal44/Video-Steganography"><img src="https://travis-ci.com/Amritaryal44/Video-Steganography.svg?branch=master" alt="Build Status"></a></p>
+<p>Hide Your secret videos inside any other videos.</p>
+<h3>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Cover video where secret video is to be hidden</th>
+<th align="center">Secret Video to be hidden</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src="img_md/v1.gif" alt="Cover Video"></td>
+<td align="center"><img src="img_md/v2.gif" alt="Secret Video"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">cover video with hidden secret video</th>
+<th align="center">Revealed secret video</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img src="img_md/encrypted.gif" alt="Encrypted Video"></td>
+<td align="center"><img src="img_md/revealed.gif" alt="Decrypted Video"></td>
+</tr>
+</tbody>
+</table>
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h3>
+<ul>
+<li>Supports video of any aspect ratio</li>
+<li>Encodes audio along with video</li>
+</ul>
+<p>Please ensure:</p>
+<ul>
+<li>Secret video files must have less frame count then that of cover video</li>
+<li>We will lose Audio quality and audio of secret video may be noticeable even after encryption [ Currently working for it ]</li>
+<li>ffmpeg  needs to be installed and should be available in shell command</li>
+<li>Encrypted video should not be converted into any other forms because we don't want to compress the video to preserve the secret data</li>
+</ul>
+<h3>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h3>
+<p>Install ffmpeg.</p>
+<div class="highlight highlight-source-shell"><pre>$ sudo apt-get update
+$ sudo apt-get install ffmpeg</pre></div>
+<p>If you are using windows, install it from <a href="https://ffmpeg.org">here</a>.
+Check if you can use it in shell/terminal:</p>
+<div class="highlight highlight-source-shell"><pre>$ ffmpeg </pre></div>
+<p>Clone the repository</p>
+<div class="highlight highlight-source-shell"><pre>$ git clone https://github.com/Amritaryal44/Video-Steganography.git</pre></div>
+<p>Install all package requirements for python</p>
+<div class="highlight highlight-source-shell"><pre>$ pip install -r requirements.txt</pre></div>
+<p><strong>To hide the video, use encrypt.py:</strong></p>
+<div class="highlight highlight-source-python"><pre><span class="pl-c"># path of cover video and secret video</span>
+<span class="pl-s1">cover_path</span> <span class="pl-c1">=</span> <span class="pl-s">"v1.mp4"</span>
+<span class="pl-s1">secret_path</span> <span class="pl-c1">=</span> <span class="pl-s">"v2.mp4"</span></pre></div>
+<ul>
+<li>
+<code>cover_path</code> : Stores the path of cover video in which secret video is to be hidden.</li>
+<li>
+<code>secret_path</code> : Stores the path of secret video which is to be hidden.</li>
+</ul>
+<p>Encrypted video is saved in <code>out/covered.mkv</code></p>
+<p><strong>To reveal the secret video, use decrypt.py:</strong></p>
+<div class="highlight highlight-source-python"><pre><span class="pl-c"># path to encrypted file</span>
+<span class="pl-s1">enc_path</span> <span class="pl-c1">=</span> <span class="pl-s">"out/covered.mkv"</span></pre></div>
+<ul>
+<li>
+<code>cover_path</code> : Stores the path of cover video in which secret video is to be hidden.</li>
+<li>
+<code>secret_path</code> : Stores the path of secret video which is to be hidden.</li>
+</ul>
+<p>Decrypted video is saved in <code>out/secret_revealed.mkv</code></p>
+<p><strong>Video Reference</strong></p>
+<ul>
+<li>cover video : <a href="https://www.youtube.com/watch?v=OnFbsxS-thw">Link</a>
+</li>
+<li>secret video : <a href="https://www.youtube.com/watch?v=mvVu9FI4bd4">Link</a>
+</li>
+</ul>
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LICENSE</h2>
+<p>MIT</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Amritaryal44/Video-Steganography">Video-steganography</a> is maintained by <a href="https://github.com/Amritaryal44">Amritaryal44</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
