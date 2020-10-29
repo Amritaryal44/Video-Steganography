@@ -24,6 +24,8 @@ Please ensure:
   - ffmpeg  needs to be installed and should be available in shell command
   - Encrypted video should not be converted into any other forms because we don't want to compress the video to preserve the secret data
 
+### Google Colab Link: <https://colab.research.google.com/drive/1clINorKvTW9Zw45VnRFGOeND_DQy10s0?usp=sharing>
+
 ### Installation
 
 Install ffmpeg.
