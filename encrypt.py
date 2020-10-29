@@ -63,6 +63,12 @@ with wave.open("enc/enc.wav", 'wb') as e:
     c = wave.open("enc/cvr.wav", 'rb')
     s_frames = np.array(list(s.readframes(s.getnframes())), dtype='uint8')
     c_frames = np.array(list(c.readframes(c.getnframes())), dtype='uint8')
+	
+	# make the shape of frames same
+    if s_frames.shape[0]>c_frames.shape[0]:
+      c_frames = np.concatenate((c_frames, np.zeros((s_frames.shape[0]-c_frames.shape[0],), dtype='uint8')), axis=0)
+    elif s_frames.shape[0]<c_frames.shape[0]:
+      s_frames = np.concatenate((s_frames, np.zeros((c_frames.shape[0]-s_frames.shape[0],), dtype='uint8')), axis=0)
 
     # encryption of audio
     enc_frames = (c_frames&0b11110000)|(s_frames&0b11110000)>>4
