@@ -2,7 +2,7 @@ astroid==2.4.2
 isort==5.0.8
 lazy-object-proxy==1.5.0
 mccabe==0.6.1
-numpy==1.19.0
+numpy==1.22.0
 opencv-python>=4
 pylint==2.5.3
 six==1.15.0
