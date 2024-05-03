@@ -7,7 +7,7 @@ opencv-python>=4
 pylint==2.5.3
 six==1.15.0
 toml==0.10.1
-tqdm==4.47.0
+tqdm==4.66.3
 typed-ast==1.4.1
 Wave==0.0.2
 wrapt==1.12.1
