@@ -4,7 +4,7 @@ lazy-object-proxy==1.5.0
 mccabe==0.6.1
 numpy==1.22.0
 opencv-python>=4
-pylint==2.5.3
+pylint==4.0.9
 six==1.15.0
 toml==0.10.1
 tqdm==4.66.3
